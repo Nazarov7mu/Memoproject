@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="uz.fti.ag.memoproject.AddMemoActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:gravity="center|top"
+        android:layout_height="fill_parent"
+        >
+
+
+        <ImageButton
+            android:id="@+id/take_a_photo_icon"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border"
+            android:src="@drawable/photo_icon"
+            android:scaleType="fitCenter">
+
+        </ImageButton>
+
+        <EditText
+            android:layout_weight="30"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#2fffffff"
+            android:gravity="center_horizontal"
+            android:maxLength="144"
+            android:padding="15dp"
+            android:hint="Enter memo text here
+(Max length is 144 symbols)"
+            android:textColorHint="#e2e2e2"
+            android:id="@+id/memoTextXML"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/DataPickerXML"
+            android:layout_weight="15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="5/8/2017"
+            android:textColor="#ffffff"
+
+            />
+
+        <LinearLayout
+            android:layout_weight="15"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <Button
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_width="0dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="save"
+                android:id="@+id/SaveButtonXML"
+                android:layout_height="match_parent"
+
+                />
+            <Button
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="close"
+                android:layout_weight="1"
+                android:id="@+id/CloseButtonXML"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
